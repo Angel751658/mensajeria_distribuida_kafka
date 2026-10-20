@@ -1,0 +1,98 @@
+.consulta-page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.consulta-page h1 {
+  font-size: 40px;
+}
+
+.consulta-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.consulta-tab {
+  padding: 12px 20px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.consulta-tab.active {
+  border-bottom-color: var(--accent);
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+.consulta-panel {
+  padding: 28px 16px;
+}
+
+.consulta-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.consulta-form select,
+.consulta-form button {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.consulta-form button {
+  border-color: #007bff;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.consulta-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.consulta-results {
+  margin: 24px auto 0;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  border-radius: 6px;
+  background: var(--code-bg);
+  color: var(--text-h);
+  text-align: left;
+}
+
+.consulta-error {
+  margin-top: 20px;
+  color: #b42318;
+}
+
+.arquitectura-placeholder {
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .consulta-page h1 {
+    font-size: 32px;
+  }
+
+  .consulta-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
